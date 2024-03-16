@@ -1,0 +1,28 @@
+.container {
+    height: 100vh;
+    width: 100vw;
+}
+
+img {
+    position: relative;
+    height: 250px;
+    width: auto;
+    overflow: hidden;
+}
+
+.move-diagonal{
+    animation-name: moveDiagonal;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes moveDiagonal {
+    0% {
+        top: 0;
+        left: 0;
+    }
+    100% {
+        top: 100%;
+        left: 100%;
+    }
+}
